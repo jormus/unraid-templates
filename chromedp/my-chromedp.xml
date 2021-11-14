@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>chromedp</Name>
+  <Repository>chromedp/headless-shell:latest</Repository>
+  <Registry>https://hub.docker.com/r/chromedp/headless-shell/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://lime-technology.com/forum/index.php?topic=38486.0</Support>
+  <Project/>
+  <Overview>The headless-shell project provides a Docker image, chromedp/headless-shell, containing a pre-built version of Chrome's headless-shell -- a slimmed down version of Chrome that is useful for driving, profiling, or testing web pages.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/spants/unraidtemplates/master/Spants/CouchDB-v2.x.xml</TemplateURL>
+  <Icon>https://github.com/jormus/unraid-templates/blob/main/icons/chromedp.png</Icon>
+  <ExtraParams/>
+  <PostArgs>--user nobody --security-opt seccomp=chrome.json --entrypoint '/headless-shell/headless-shell' chromedp/headless-shell --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 --disable-gpu --headless</PostArgs>
+  <CPUset/>
+  <DateInstalled>1636909186</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>The headless-shell project provides a Docker image, chromedp/headless-shell, containing a pre-built version of Chrome's headless-shell -- a slimmed down version of Chrome that is useful for driving, profiling, or testing web pages.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9222</HostPort>
+        <ContainerPort>9222</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Labels/>
+  <Config Name="container port" Target="9222" Default="9222" Mode="tcp" Description="Container Port: 9222" Type="Port" Display="always" Required="false" Mask="false">9222</Config>
+</Container>
