@@ -13,7 +13,7 @@
   <Category>Productivity:</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/spants/unraidtemplates/master/Spants/CouchDB-v2.x.xml</TemplateURL>
-  <Icon>https://github.com/jormus/unraid-templates/blob/main/icons/chromedp.png</Icon>
+  <Icon>https://raw.githubusercontent.com/jormus/unraid-templates/main/icons/chromedp.png</Icon>
   <ExtraParams/>
   <PostArgs>--user nobody --security-opt seccomp=chrome.json --entrypoint '/headless-shell/headless-shell' chromedp/headless-shell --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 --disable-gpu --headless</PostArgs>
   <CPUset/>
